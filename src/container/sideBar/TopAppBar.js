@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
+import Button from '@material-ui/core/Button'
 import Navigation from '../navigation/Navigation'
+import Logo from '../logo/Logo'
 
 const useStyles = makeStyles({
   list: {
@@ -22,10 +22,7 @@ const useStyles = makeStyles({
 export default function TopAppBar() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
+    left: false
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -52,9 +49,7 @@ export default function TopAppBar() {
         <React.Fragment>
           <AppBar position="static">
             <Toolbar className={classes.menuButton}>
-              <IconButton edge="start" color="inherit" aria-label="menu">
-                <MenuIcon onClick={toggleDrawer('left', true)}/>
-              </IconButton>
+              <Button onClick={toggleDrawer('left', true)}><Logo/></Button>
             </Toolbar>
           </AppBar>
           <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>

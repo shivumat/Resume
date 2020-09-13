@@ -6,13 +6,13 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 
-export default function Logo() {
+export default function Logo(props) {
 
   return (
     <Container>
         <Row>
         <Col >
-            <Image className="logo" src={logo} rounded />
+            <Image className="logo" src={logo} rounded onClick = {props.onclick}/>
         </Col>
         </Row>
     </Container>
