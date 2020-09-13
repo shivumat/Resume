@@ -1,0 +1,16 @@
+html{
+    height: 100%;
+}
+body{
+    height: 89%;
+}
+
+.bottom-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+#root{
+    height: 100%;
+}

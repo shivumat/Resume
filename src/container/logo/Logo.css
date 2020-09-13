@@ -1,0 +1,14 @@
+
+.logo{
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        height: 30%;
+        width: 30%;
+    }
+  }
