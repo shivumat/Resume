@@ -19,7 +19,7 @@ export default function MyCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} raised={true}>
       <CardActionArea>
         <CardMedia
           component="img"
