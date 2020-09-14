@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import SideBar from '../sideBar/SideBar';
 import TopAppBar from '../sideBar/TopAppBar';
+import Home from '../home/Home'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,11 +27,8 @@ export default function BodyPanel() {
             <SideBar/>
           </Grid>
         </Hidden>
-        <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-          Hello
-        </Grid>
-        <Grid item xs={12} sm={3} md={4} lg={4} xl={4}>
-          Bye
+        <Grid item xs={12} sm={9} md={10} lg={10} xl={10}>
+            <Home/>
         </Grid>
       </Grid>
     </React.Fragment>

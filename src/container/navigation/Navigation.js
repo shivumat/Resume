@@ -4,7 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import routes from '../../static/routes/routes'
 
 function NavigationItem(props){
     return(
@@ -29,12 +29,7 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <List component="nav">
-          <NavigationItem link="/" label="Home"/>
-          <NavigationItem link="/About" label="About"/>
-          <NavigationItem link="/Skills" label="Skills"/>
-          <NavigationItem link="/Experience" label="Experience"/>
-          <NavigationItem link="/Education" label="Education"/>
-          <NavigationItem link="/Contact" label="Contact"/>
+        {routes.map((route,i) => <NavigationItem link={route.link} label={route.label}/>)}
       </List>
     </div>
   );
