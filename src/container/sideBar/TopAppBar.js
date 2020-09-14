@@ -11,9 +11,6 @@ const useStyles = makeStyles({
   list: {
     width: 250,
   },
-  fullList: {
-    width: 'auto',
-  },
   menuButton : {
     backgroundColor : 'black'
   }
@@ -52,7 +49,7 @@ export default function TopAppBar() {
               <Button onClick={toggleDrawer('left', true)}><Logo/></Button>
             </Toolbar>
           </AppBar>
-          <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
+          <Drawer PaperProps={{className : classes.menuButton}} anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
             {list('left')}
           </Drawer>
         </React.Fragment>
