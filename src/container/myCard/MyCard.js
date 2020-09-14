@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: "30%",
     marginLeft: "35%",
-    opacity: 0.65,
+    opacity: 0.75,
   }
 });
 
