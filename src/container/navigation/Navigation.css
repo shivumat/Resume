@@ -1,0 +1,29 @@
+.navigation{
+    background-color: black;
+    color: grey;
+    width: 100%;
+}
+.navigationItem{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 10% !important;
+}
+.navigationLabel{
+    margin: 0px;
+    text-align: left;
+    font-family: monaco, Consolas, "Lucida Console", monospace; 
+    font-size: 14px; 
+    font-style: normal;
+}
+.navigationDivider{
+    background-color: grey !important;
+    width: 80%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
+@media screen and (max-width: 600px) {
+    .navigationLabel{
+      text-align: center;
+    }
+  }

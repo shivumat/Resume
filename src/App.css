@@ -1,0 +1,13 @@
+.App {
+  /* background-color: #bdb390; */
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .App{
+    margin: 3% 0% 1% 4%;
+    height: 96%;
+    width: 96%;
+  }
+}
+
