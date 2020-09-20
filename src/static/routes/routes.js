@@ -1,32 +1,36 @@
+import React from 'react';
+import Home from '../../container/home/Home';
+import About from '../../container/about/About'
+
 export default [
     {
-        "link"    :   "/",
+        "path"    :   "/",
         "label"   :   "Home",
-        "panel"   :   ""
+        "Component"   :   <Home/>
     },
     {
-        "link"    :   "/Projects",
+        "path"    :   "/Projects",
         "label"   :   "Projects",
-        "panel"   :   ""
+        "Component"   :   <About/>
     },
     {
-        "link"    :   "/Skills",
+        "path"    :   "/Skills",
         "label"   :   "Skills",
-        "panel"   :   ""
+        "Component"   :   <Home/>
     },
     {
-        "link"    :   "/Experience",
+        "path"    :   "/Experience",
         "label"   :   "Experience",
-        "panel"   :   ""
+        "Component"   :   <Home/>
     },
     {
-        "link"    :   "/Education",
+        "path"    :   "/Education",
         "label"   :   "Education",
-        "panel"   :   ""
+        "Component"   :   <Home/>
     },
     {
-        "link"    :   "/Contact",
+        "path"    :   "/Contact",
         "label"   :   "Contact",
-        "panel"   :   ""
+        "Component"   :   <Home/>
     }
 ]

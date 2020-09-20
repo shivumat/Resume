@@ -6,6 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import Navigation from '../navigation/Navigation'
 import Logo from '../logo/Logo'
+import './SideBar.css'
 
 const useStyles = makeStyles({
   list: {
@@ -44,7 +45,7 @@ export default function TopAppBar() {
   return (
     <div>
         <React.Fragment>
-          <AppBar position="static">
+          <AppBar position="static" className="topAppBar">
             <Toolbar className={classes.menuButton}>
               <Button onClick={toggleDrawer('left', true)}><Logo/></Button>
             </Toolbar>

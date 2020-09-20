@@ -1,18 +1,18 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
-  about: {
-    height: "100%",
-    backgroundColor: "#bdb390"
-  }
-});
+import './About.css';
+import Divider from '@material-ui/core/Divider';
 
 export default function About() {
-  const classes = useStyles();
 
   return (
-    <div className={classes.about}></div>
+    <div className="about">
+      <div className="content">
+        <div className="header">
+          ABOUT
+          <Divider className="headerLine"/>
+        </div>
+      </div>
+    </div>
   );
 }
 

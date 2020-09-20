@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <List component="nav">
-        {routes.map((route,i) => <NavigationItem link={route.link} label={route.label}/>)}
+        {routes.map((route,i) => <NavigationItem link={route.path} label={route.label}/>)}
       </List>
     </div>
   );
