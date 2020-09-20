@@ -11,6 +11,13 @@ export default function About() {
           ABOUT
           <Divider className="headerLine"/>
         </div>
+        <Divider className="navigationDivider"/>
+        <Divider className="navigationDivider"/>
+        <Divider className="navigationDivider"/>
+        <Divider className="navigationDivider"/>
+        <Divider className="navigationDivider"/>
+        <Divider className="navigationDivider"/>
+        <Divider className="navigationDivider"/>
       </div>
     </div>
   );

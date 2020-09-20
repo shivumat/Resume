@@ -1,7 +1,7 @@
 
 import React from "react";
 import {Switch, Route} from "react-router-dom";
-import routes from '../../static/routes/routes';
+import routes from '../../../static/routes/routes';
 import './RoutePanels.css';
 
 

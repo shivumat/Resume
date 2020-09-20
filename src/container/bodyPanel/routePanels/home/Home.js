@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css'
 import Grid from '@material-ui/core/Grid';
-import TitlePanel from '../titlePanel/TitlePanel';
-import About from '../about/About';
+import TitlePanel from './titlePanel/TitlePanel';
+import About from '../home/about/About';
 
 export default function Home() {
 
