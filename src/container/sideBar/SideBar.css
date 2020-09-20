@@ -7,3 +7,15 @@
 .toolbar{
     background-color: black;
 }
+
+@media screen and (max-width: 600px) {
+    .sideBar{
+        display: none !important;
+    }
+  }
+
+@media screen and (min-width: 600px) {
+    .topAppBar{
+        display: none !important;
+    }
+  }
