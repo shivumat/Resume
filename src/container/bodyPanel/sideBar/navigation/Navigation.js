@@ -11,7 +11,7 @@ function NavigationItem(props){
         <React.Fragment>
             <ListItem button className="navigationItem">
               <ListItemLink href={props.link}>
-                <ListItemText primary={props.label} disableTypography="true" 
+                <ListItemText primary={props.label} disableTypography={true}
                     className="navigationLabel"/>
               </ListItemLink>
             </ListItem>
@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <List component="nav">
-        {routes.map((route,i) => <NavigationItem link={route.path} label={route.label}/>)}
+        {routes.map((route,i) => <NavigationItem key={i} link={route.path} label={route.label}/>)}
       </List>
     </div>
   );

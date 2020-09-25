@@ -3,24 +3,62 @@
     background-color: #bdb390;
     font-family: monaco, Consolas, "Lucida Console", monospace;
 }
-
-.header{
-    font-size: 5vh;
+.aboutHeader{
+    font-size: 2.5vw;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: bolder;
 }
-
+.aboutSummary{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.info{
+    margin-top: 0px !important;
+}
 .content{
     padding-top: 15px;
     padding-left: 15px;
 }
-
+.aboutInfo{
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
 .headerLine{
-    width: 3em;
+    width: 6em;
     background-color: orange !important;
     height: 0.7vh !important;
 }
+.summaryLine{
+    width: 6em;
+    background-color: orange !important;
+    height: 0.5vh !important;
+}
+.aboutDivider{
+    width: 80%;
+}
 
 @media screen and (max-width: 600px) {
-    .header{
-        font-size: 4vh;
+    .content{
+        padding-top: 0px;
+        padding-left: 15px;
     }
-  }
+    .aboutHeader{
+        font-size: 7.5vw;
+    }
+    .aboutSummary{
+        font-size: 4vw;
+    }
+    .aboutInfo{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    .aboutDivider{
+        width: 85%;
+    }    
+    .info{
+        margin-top: 6px !important;
+    }
+  } 

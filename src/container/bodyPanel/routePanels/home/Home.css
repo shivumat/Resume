@@ -9,9 +9,9 @@
 }
 @media screen and (max-width: 600px) {
     .homeTitle{
-      height: 70%;
+      height: 60%;
     }
     .homeAbout{
-      height: 30%;
+      height: 40%;
     }
   }

@@ -27,10 +27,5 @@ export default [
         "path"    :   "/Education",
         "label"   :   "Education",
         "Component"   :   <Home/>
-    },
-    {
-        "path"    :   "/Contact",
-        "label"   :   "Contact",
-        "Component"   :   <Home/>
     }
 ]
