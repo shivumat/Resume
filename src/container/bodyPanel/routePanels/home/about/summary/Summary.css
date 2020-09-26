@@ -2,6 +2,12 @@
     font-size: 1.5vw;
     font-weight: bold;
 }
+.summary{
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 4%;
+    line-height: 20px;
+}
 .summaryLine{
     width: 6em;
     background-color: orange !important;
@@ -11,5 +17,10 @@
 @media screen and (max-width: 600px) {
     .aboutSummary{
         font-size: 4vw;
+    }
+    .summary{
+        font-size: 2vw;
+        font-weight: bold;
+        line-height: normal;
     }
   } 

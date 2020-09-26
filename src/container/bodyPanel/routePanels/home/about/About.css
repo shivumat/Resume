@@ -36,4 +36,7 @@
     .info{
         margin-top: 6px !important;
     }
+    .summaryPanel{
+        padding-top: 0 !important;
+    }
   } 
