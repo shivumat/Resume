@@ -1,9 +1,10 @@
 import React from 'react';
 import './About.css';
-import InfoComponent from './InfoComponent/InfoComponent'
+import InfoComponent from './infoComponent/InfoComponent';
+import Summary from './summary/Summary';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
-import infoList from '../../../../../static/data/infoList'
+import infoList from '../../../../../static/data/infoList';
 
 export default function About() {
 
@@ -17,8 +18,7 @@ export default function About() {
             {infoList.map((info,i)=><InfoComponent key={i} label = {info.label} data = {info.data}/>)}
           </Grid>
           <Grid item={true} xs={6} sm={12} md={12} lg={12} xl={12}>
-            <span className = "aboutSummary">SUMMARY</span>
-            <Divider className="summaryLine"/>
+            <Summary/>
           </Grid>
         </Grid>
       </div>

@@ -1,0 +1,15 @@
+.aboutSummary{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.summaryLine{
+    width: 6em;
+    background-color: orange !important;
+    height: 0.5vh !important;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutSummary{
+        font-size: 4vw;
+    }
+  } 

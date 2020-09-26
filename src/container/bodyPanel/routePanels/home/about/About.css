@@ -9,10 +9,6 @@
     margin-bottom: 5px;
     font-weight: bolder;
 }
-.aboutSummary{
-    font-size: 1.5vw;
-    font-weight: bold;
-}
 .info{
     margin-top: 0px !important;
 }
@@ -24,11 +20,6 @@
     width: 6em;
     background-color: orange !important;
     height: 0.7vh !important;
-}
-.summaryLine{
-    width: 6em;
-    background-color: orange !important;
-    height: 0.5vh !important;
 }
 
 @media screen and (max-width: 600px) {
