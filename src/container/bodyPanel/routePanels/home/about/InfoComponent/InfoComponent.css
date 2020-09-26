@@ -1,0 +1,19 @@
+.aboutInfo{
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+.aboutDivider{
+    width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutInfo{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    .aboutDivider{
+        width: 85%;
+    }
+  }
