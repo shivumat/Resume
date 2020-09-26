@@ -6,9 +6,11 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 export default function Downloadresume(){
     return(
-        <Button variant="outlined" size="small" className="download" startIcon={<CloudDownloadIcon />}>
-            Click To Download Resume As PDF
-      </Button>
+        <a className="downloadAnchor" href="/public/files/Mathur_Shivank.pdf" download>
+            <Button variant="outlined" size="small" className="download" startIcon={<CloudDownloadIcon />}>
+                Click To Download Resume As PDF
+            </Button>
+        </a>
     );
 }
 

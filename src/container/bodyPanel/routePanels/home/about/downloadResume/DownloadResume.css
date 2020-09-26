@@ -3,6 +3,9 @@
     margin-top: 5% !important;
     margin-left: 2% !important;
 }
+.downloadAnchor{
+    text-decoration: none !important;
+}
 
 @media screen and (max-width: 600px) {
     .download{
