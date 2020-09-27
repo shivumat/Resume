@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from '../../container/home/Home';
-import About from '../../container/about/About'
+import Home from '../../container/bodyPanel/routePanels/home/Home';
+import About from '../../container/bodyPanel/routePanels/home/about/About'
 
 export default [
     {
@@ -26,11 +26,6 @@ export default [
     {
         "path"    :   "/Education",
         "label"   :   "Education",
-        "Component"   :   <Home/>
-    },
-    {
-        "path"    :   "/Contact",
-        "label"   :   "Contact",
         "Component"   :   <Home/>
     }
 ]

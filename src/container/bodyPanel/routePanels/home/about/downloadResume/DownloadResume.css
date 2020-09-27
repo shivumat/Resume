@@ -1,0 +1,17 @@
+.download{
+    font-size: 1vw !important;
+    margin-top: 5% !important;
+    margin-left: 2% !important;
+}
+.downloadAnchor{
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    .download{
+        font-size: 3.5vw !important;
+        margin: auto !important;
+        margin-top: 3% !important;
+        margin-left: 2% !important;
+    }
+  } 

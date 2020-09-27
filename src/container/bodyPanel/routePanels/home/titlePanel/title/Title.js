@@ -30,7 +30,7 @@ export default function Title() {
         <h4 className={classes.h4}>Hello, I'm</h4>
         <h2 className={classes.h2}>Shivank Mathur</h2>
         <hr className={classes.hr}/>
-        <h6 className={classes.h6}>Software | Web Developer</h6>
+        <h6 className={classes.h6}>Software | UI Developer</h6>
         <hr className={classes.hr}/>
     </div>
   );

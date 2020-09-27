@@ -1,9 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import SideBar from '../sideBar/SideBar';
-import TopAppBar from '../sideBar/TopAppBar';
-import RoutePanels from '../routePanels/RoutePanels'
+import SideBar from '../bodyPanel/sideBar/SideBar';
+import TopAppBar from '../bodyPanel/sideBar/TopAppBar';
+import RoutePanels from '../bodyPanel/routePanels/RoutePanels'
 
 const useStyles = makeStyles((theme) => ({
   root: {
