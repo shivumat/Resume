@@ -1,0 +1,18 @@
+.projects{
+    height: 100%;
+    background-color: #bdb390;
+}
+.projectsHeader{
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 2.5vw;
+}
+.projectsCarouselPanel{
+    margin: 2%;
+    height: 100%;
+}
+@media screen and (max-width: 600px) {
+    .projectsHeader{
+        font-size: 6vw;
+    }
+  }
