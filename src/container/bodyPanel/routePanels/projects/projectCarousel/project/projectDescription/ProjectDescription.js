@@ -10,7 +10,7 @@ export default function ProjectDescription(props) {
   return (
     <Card className="projectDescription">
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h7" component="h3">
             {props.title}
           </Typography>
           <Typography className="description" color="textSecondary" component="p">
