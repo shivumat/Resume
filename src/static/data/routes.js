@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '../../container/bodyPanel/routePanels/home/Home';
 import About from '../../container/bodyPanel/routePanels/home/about/About';
 import Projects from '../../container/bodyPanel/routePanels/projects/Projects';
+import Skills from '../../container/bodyPanel/routePanels/skills/Skills';
 
 export const routes = [
     {
@@ -17,12 +18,12 @@ export const routes = [
     {
         "path"    :   "/Skills",
         "label"   :   "Skills",
-        "Component"   :   <About/>
+        "Component"   :   <Skills/>
     },
     {
         "path"    :   "/Experience",
         "label"   :   "Experience",
-        "Component"   :   <Home/>
+        "Component"   :   <About/>
     },
     {
         "path"    :   "/Education",

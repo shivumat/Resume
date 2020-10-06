@@ -10,12 +10,10 @@ export default function ProjectDescription(props) {
   return (
     <Card className="projectDescription">
         <CardContent>
-          <Typography gutterBottom variant="h7" component="h3">
+          <Typography gutterBottom variant="body1" component="h4">
             {props.title}
           </Typography>
-          <Typography className="description" color="textSecondary" component="p">
-            {props.tags.map( (item, i) => <Link key={i} href={'/Projects/'+item}>#{item} </Link> )}
-          </Typography>
+          {props.tags.map( (item, i) => <Link underline='hover' key={i} href={'/Projects/'+item}>#{item} </Link> )}
           <Typography className="description" variant="body2" color="textSecondary" component="div">
             {props.description}
           </Typography>

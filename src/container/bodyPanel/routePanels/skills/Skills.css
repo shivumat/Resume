@@ -1,0 +1,15 @@
+.skills{
+    height: 100%;
+    background-color: #bdb390;
+}
+.skillsHeader{
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .skillsHeader{
+        font-size: 6vw;
+    }
+  }
