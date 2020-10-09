@@ -1,11 +1,13 @@
 .skills{
     height: 100%;
     background-color: #bdb390;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .skillsHeader{
     padding-top: 2%;
-    padding-left: 2%;
     font-size: 2.5vw;
+    padding-bottom: 2%;
 }
 
 @media screen and (max-width: 600px) {
