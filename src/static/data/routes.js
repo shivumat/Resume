@@ -1,8 +1,10 @@
 import React from 'react';
 import Home from '../../container/bodyPanel/routePanels/home/Home';
-import About from '../../container/bodyPanel/routePanels/home/about/About'
+import About from '../../container/bodyPanel/routePanels/home/about/About';
+import Projects from '../../container/bodyPanel/routePanels/projects/Projects';
+import Skills from '../../container/bodyPanel/routePanels/skills/Skills';
 
-export default [
+export const routes = [
     {
         "path"    :   "/",
         "label"   :   "Home",
@@ -11,21 +13,28 @@ export default [
     {
         "path"    :   "/Projects",
         "label"   :   "Projects",
-        "Component"   :   <About/>
+        "Component"   :   <Projects/>
     },
     {
         "path"    :   "/Skills",
         "label"   :   "Skills",
-        "Component"   :   <Home/>
+        "Component"   :   <Skills/>
     },
     {
         "path"    :   "/Experience",
         "label"   :   "Experience",
-        "Component"   :   <Home/>
+        "Component"   :   <About/>
     },
     {
         "path"    :   "/Education",
         "label"   :   "Education",
         "Component"   :   <Home/>
+    }
+]
+
+export const extraRoutes = [
+    {
+        "path"    :   "/Projects/:skill",
+        "Component"   :   <Projects/>
     }
 ]
