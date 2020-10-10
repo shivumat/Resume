@@ -1,5 +1,5 @@
 import Home from '../../container/bodyPanel/routePanels/home/Home';
-import About from '../../container/bodyPanel/routePanels/home/about/About';
+import About from '../../container/bodyPanel/routePanels/about/About';
 import Projects from '../../container/bodyPanel/routePanels/projects/Projects';
 import Skills from '../../container/bodyPanel/routePanels/skills/Skills';
 
@@ -17,11 +17,7 @@ export const routes = [
         "Component"   :   Skills
     },
     {
-        "label"   :   "Experience",
+        "label"   :   "About",
         "Component"   :   About
-    },
-    {
-        "label"   :   "Education",
-        "Component"   :   Home
     }
 ]
