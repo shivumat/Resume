@@ -14,16 +14,26 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BodyPanel() {
   const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+  const [skill, setSkill] = React.useState("");
+
+  const handleSkillChange = (newValue) => {
+      setSkill(newValue);
+  };
+
+  const handleChange = (newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <React.Fragment>
-      <TopAppBar/>
+      <TopAppBar handleChange={handleChange} handleSkillChange={handleSkillChange}/>
       <Grid container className={classes.root}>
         <Grid item sm={3} md={2} lg={2} xl={2}>
-          <SideBar/>
+          <SideBar handleChange={handleChange} handleSkillChange={handleSkillChange}/>
         </Grid>
         <Grid item xs={12} sm={9} md={10} lg={10} xl={10}>
-            <RoutePanels/>
+            <RoutePanels value={value} skill={skill} handleSkillChange={handleSkillChange}/>
         </Grid>
       </Grid>
     </React.Fragment>

@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function TopAppBar() {
+export default function TopAppBar(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     left: false
@@ -38,7 +38,7 @@ export default function TopAppBar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Navigation/>
+      <Navigation handleChange={props.handleChange} handleSkillChange={props.handleSkillChange}/>
     </div>
   );
 

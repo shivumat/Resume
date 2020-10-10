@@ -13,7 +13,7 @@ export default function ProjectDescription(props) {
           <Typography gutterBottom variant="body1" component="h4">
             {props.title}
           </Typography>
-          {props.tags.map( (item, i) => <Link underline='hover' key={i} href={'/Projects/'+item}>#{item} </Link> )}
+          {props.tags.map( (item, i) => <Link underline='hover' key={i} onClick={()=> props.handleSkillChange(item)}>#{item} </Link> )}
           <Typography className="description" variant="body2" color="textSecondary" component="div">
             {props.description}
           </Typography>

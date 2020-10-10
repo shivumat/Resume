@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from '../../container/bodyPanel/routePanels/home/Home';
 import About from '../../container/bodyPanel/routePanels/home/about/About';
 import Projects from '../../container/bodyPanel/routePanels/projects/Projects';
@@ -6,35 +5,23 @@ import Skills from '../../container/bodyPanel/routePanels/skills/Skills';
 
 export const routes = [
     {
-        "path"    :   "/",
         "label"   :   "Home",
-        "Component"   :   <Home/>
+        "Component"   :   Home
     },
     {
-        "path"    :   "/Projects",
         "label"   :   "Projects",
-        "Component"   :   <Projects/>
+        "Component"   :   Projects
     },
     {
-        "path"    :   "/Skills",
         "label"   :   "Skills",
-        "Component"   :   <Skills/>
+        "Component"   :   Skills
     },
     {
-        "path"    :   "/Experience",
         "label"   :   "Experience",
-        "Component"   :   <About/>
+        "Component"   :   About
     },
     {
-        "path"    :   "/Education",
         "label"   :   "Education",
-        "Component"   :   <Home/>
-    }
-]
-
-export const extraRoutes = [
-    {
-        "path"    :   "/Projects/:skill",
-        "Component"   :   <Projects/>
+        "Component"   :   Home
     }
 ]

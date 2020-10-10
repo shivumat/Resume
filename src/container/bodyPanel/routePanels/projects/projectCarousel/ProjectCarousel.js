@@ -12,7 +12,7 @@ export default function ProjectCarousel(props)
                     navButtonsAlwaysInvisible= {false} fullHeightHover ={false}> 
                     {
                         props.projects.map( (item, i) => <Project key={i} image={item.image} description={item.description} 
-                                                        title={item.title} tags={item.tags} /> )
+                                            title={item.title} tags={item.tags} handleSkillChange={props.handleSkillChange}/> )
                     }
                 </Carousel>
             </Paper>
