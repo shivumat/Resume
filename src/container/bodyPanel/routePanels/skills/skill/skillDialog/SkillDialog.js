@@ -31,7 +31,7 @@ const StyledTableCell = withStyles((theme) => ({
   
 const useStyles = makeStyles({
     table: {
-      minWidth: 550,
+      maxWidth: 650,
     },
     category: {
         width: '20%',
