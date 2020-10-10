@@ -10,7 +10,8 @@ function NavigationItem(props){
     return(
         <React.Fragment>
             <ListItem button className="navigationItem">
-              <ListItemLink index = {props.index} handleChange={props.handleChange}  handleSkillChange={props.handleSkillChange}>
+              <ListItemLink index = {props.index} 
+                  onClick={() => {props.handleChange(props.index); props.handleSkillChange("")}}>
                 <ListItemText primary={props.label} disableTypography={true}
                     className="navigationLabel"/>
               </ListItemLink>
@@ -21,7 +22,7 @@ function NavigationItem(props){
 }
 
 function ListItemLink(props) {
-    return <ListItem button onClick={() => {props.handleChange(props.index); props.handleSkillChange("")}} component="a" {...props} />;
+    return <ListItem button component="a" {...props} />;
   }
 
 export default function Navigation(props) {

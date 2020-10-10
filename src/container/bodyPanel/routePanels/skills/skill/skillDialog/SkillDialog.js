@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Typography from '@material-ui/core/Typography';
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
@@ -59,12 +60,16 @@ export default function SkillDialog(props) {
               <StyledTableRow>
                   <StyledTableCell  className={classes.category}>Category</StyledTableCell>
                   <StyledTableCell className={classes.ranking}>Skill Percentile</StyledTableCell>
+                  <StyledTableCell className={classes.ranking}></StyledTableCell>
               </StyledTableRow>
           </TableHead>
           <TableBody>
               {categories.map((category,i)=> {return <StyledTableRow key={i}>
                   <StyledTableCell className={classes.category}>{category.name}</StyledTableCell>
                   <StyledTableCell className={classes.ranking}><LinearProgress variant="determinate" value={category.skillRanking * 10} /></StyledTableCell>
+                  <StyledTableCell className={classes.ranking}>
+                  <Typography variant="body2" color="textSecondary">{`${category.skillRanking * 10}%`}</Typography>
+                  </StyledTableCell>
               </StyledTableRow>
               })}
           </TableBody>
