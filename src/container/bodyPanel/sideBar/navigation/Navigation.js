@@ -4,6 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Social from '../social/Social'
 import {routes} from '../../../../static/data/routes'
 
 function NavigationItem(props){
@@ -33,6 +34,8 @@ export default function Navigation(props) {
         {routes.map((route,i) => <NavigationItem key={i} index={i} handleChange={props.handleChange}
                    handleSkillChange={props.handleSkillChange} label={route.label}/>)}
       </List>
+      
+      <Social/>
     </div>
   );
 }

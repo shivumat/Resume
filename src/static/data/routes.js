@@ -1,5 +1,6 @@
 import Home from '../../container/bodyPanel/routePanels/home/Home';
-import About from '../../container/bodyPanel/routePanels/about/About';
+import Expereince from '../../container/bodyPanel/routePanels/experience/Experience';
+import Accomplishments from '../../container/bodyPanel/routePanels/accomplishments/Accomplishments';
 import Projects from '../../container/bodyPanel/routePanels/projects/Projects';
 import Skills from '../../container/bodyPanel/routePanels/skills/Skills';
 
@@ -17,7 +18,11 @@ export const routes = [
         "Component"   :   Skills
     },
     {
-        "label"   :   "About",
-        "Component"   :   About
+        "label"   :   "Experience",
+        "Component"   :   Expereince
+    },
+    {
+        "label"   :   "Accomplishments",
+        "Component"   :   Accomplishments
     }
 ]

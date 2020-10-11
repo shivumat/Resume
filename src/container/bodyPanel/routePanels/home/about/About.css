@@ -1,9 +1,9 @@
-.bio {
+.about {
   height: 100%;
   background-color: #bdb390;
   font-family: monaco, Consolas, "Lucida Console", monospace;
 }
-.bioHeader {
+.aboutHeader {
   font-size: 2.5vw;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -17,7 +17,7 @@
   padding-left: 15px;
 }
 .headerLine {
-  width: 4em;
+  width: 6em;
   background-color: orange !important;
   height: 0.7vh !important;
 }
@@ -27,7 +27,7 @@
     padding-top: 0px;
     padding-left: 15px;
   }
-  .bioHeader {
+  .aboutHeader {
     font-size: 7.5vw;
   }
   .aboutSummary {

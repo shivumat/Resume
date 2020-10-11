@@ -32,7 +32,7 @@ export default function BodyPanel() {
         <Grid item sm={3} md={2} lg={2} xl={2}>
           <SideBar handleChange={handleChange} handleSkillChange={handleSkillChange}/>
         </Grid>
-        <Grid item xs={12} sm={9} md={10} lg={10} xl={10}>
+        <Grid className={classes.root} item xs={12} sm={9} md={10} lg={10} xl={10}>
             <RoutePanels value={value} skill={skill} handleSkillChange={handleSkillChange}/>
         </Grid>
       </Grid>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Bio.css';
+import './About.css';
 import InfoComponent from './infoComponent/InfoComponent';
 import Summary from './summary/Summary';
 import DownloadResume from './downloadResume/DownloadResume'
@@ -10,9 +10,9 @@ import infoList from '../../../../../static/data/infoList';
 export default function Bio() {
 
   return (
-    <div className="bio">
+    <div className="about">
       <div className="content">
-        <span className = "bioHeader">BIO</span>
+        <span className = "aboutHeader">ABOUT</span>
         <Divider className="headerLine"/>
         <Grid container spacing={2}>
           <Grid className='info' item={true} xs={6} sm={12} md={12} lg={12} xl={12}>
