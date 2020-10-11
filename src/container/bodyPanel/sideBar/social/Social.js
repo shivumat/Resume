@@ -8,7 +8,7 @@ import './Social.css'
 export default function Social(){
 
     return (<ButtonGroup variant="text" aria-label="text button group">
-        {social.map((item,i) =><Button><Link title={item.title} href={item.link}>{<item.icon className="socialIcon"/>}</Link></Button>)}
+        {social.map((item,i) =><Button key={i}><Link title={item.title} href={item.link}>{<item.icon className="socialIcon"/>}</Link></Button>)}
         </ButtonGroup>
     )
 }
