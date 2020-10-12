@@ -1,21 +1,20 @@
 
 import React from "react";
-import {Switch, Route} from "react-router-dom";
-import {routes, extraRoutes} from '../../../static/data/routes';
+import {routes} from '../../../static/data/routes';
 import './RoutePanels.css';
+import TabPanel from './tabPanel/TabPanel'
 
+export default function RoutePanels(props) {
 
-export default function RoutePanels() {
+    const {value} = props;
+
     return (
-        <Switch>
-            {routes.map((route,i) => <Route key={i} exact path={route.path} >
-                        {route.Component}
-                </Route>
-            )}
-            {extraRoutes.map((route,i) => <Route key={i} exact path={route.path} >
-                        {route.Component}
-                </Route>
-            )}
-        </Switch>
+        <React.Fragment>
+            {routes.map((route,i)=> {
+                return  <TabPanel key={i} value={value} index={i}>
+                            {<route.Component {...props}/>}
+                        </TabPanel>
+            })}
+        </React.Fragment>
     );
 }

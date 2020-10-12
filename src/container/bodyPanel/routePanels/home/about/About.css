@@ -1,42 +1,42 @@
-.about{
-    height: 100%;
-    background-color: #bdb390;
-    font-family: monaco, Consolas, "Lucida Console", monospace;
+.about {
+  height: 100%;
+  background-color: #bdb390;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
 }
-.aboutHeader{
-    font-size: 2.5vw;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-weight: bolder;
+.aboutHeader {
+  font-size: 2.5vw;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: bolder;
 }
-.info{
-    margin-top: 0px !important;
+.info {
+  margin-top: 0px !important;
 }
-.content{
-    padding-top: 15px;
-    padding-left: 15px;
+.content {
+  padding-top: 15px;
+  padding-left: 15px;
 }
-.headerLine{
-    width: 6em;
-    background-color: orange !important;
-    height: 0.7vh !important;
+.headerLine {
+  width: 6em;
+  background-color: orange !important;
+  height: 0.7vh !important;
 }
 
 @media screen and (max-width: 600px) {
-    .content{
-        padding-top: 0px;
-        padding-left: 15px;
-    }
-    .aboutHeader{
-        font-size: 7.5vw;
-    }
-    .aboutSummary{
-        font-size: 4vw;
-    }    
-    .info{
-        margin-top: 6px !important;
-    }
-    .summaryPanel{
-        padding-top: 0 !important;
-    }
-  } 
+  .content {
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .aboutHeader {
+    font-size: 7.5vw;
+  }
+  .aboutSummary {
+    font-size: 4vw;
+  }
+  .info {
+    margin-top: 6px !important;
+  }
+  .summaryPanel {
+    padding-top: 0 !important;
+  }
+}

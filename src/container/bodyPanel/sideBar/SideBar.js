@@ -4,12 +4,12 @@ import Link from '@material-ui/core/Link'
 import Navigation from './navigation/Navigation';
 import Logo from './logo/Logo';
 
-export default function SideBar() {
+export default function SideBar(props) {
 
   return (
     <div className="sideBar">
       <Link href="/" ><Logo/></Link>
-      <Navigation/>
+      <Navigation handleChange={props.handleChange} handleSkillChange={props.handleSkillChange}/>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 
 
 export default function InfoComponent(props){
+
     return (
         <React.Fragment>
         <div className="aboutInfo">

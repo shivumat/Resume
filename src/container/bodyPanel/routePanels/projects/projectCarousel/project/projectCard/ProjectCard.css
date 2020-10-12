@@ -1,0 +1,18 @@
+.projectCard {
+  width: 100%;
+  margin-left: 0%;
+}
+
+@media screen and (max-width: 960px) {
+  .projectCard {
+    width: 64%;
+    margin-left: 18%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .projectCard {
+    width: 100%;
+    margin-left: 0%;
+  }
+}

@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import infoList from '../../../../../static/data/infoList';
 
-export default function About() {
+export default function Bio() {
 
   return (
     <div className="about">

@@ -1,6 +1,7 @@
-.projectDescription{
+.projectDescription {
   height: 100%;
+  box-shadow: none !important;
 }
-.description{
+.description {
   font-size: 1.7vh !important;
 }
