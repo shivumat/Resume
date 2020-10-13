@@ -38,6 +38,11 @@ const useStyles = makeStyles({
       },
     ranking: {
         width: '80%',
+    },
+    paperWidthSm:{
+      overflow: 'hidden',
+      width:  '60%',
+      minWidth: '300px'
     }
   });
 
@@ -53,7 +58,7 @@ export default function SkillDialog(props) {
   };
 
   return (
-    <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
+    <Dialog classes={classes} onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
       <DialogTitle className="skillDialog" id="simple-dialog-title">{skillName}</DialogTitle>
       <Table className={classes.table} aria-label="simple table">
           <TableHead>
