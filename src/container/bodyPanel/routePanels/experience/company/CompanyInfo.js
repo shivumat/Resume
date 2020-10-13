@@ -73,7 +73,7 @@ export default function CompanyInfo(props) {
       />
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.descriptionCard}>
-            <Typography className="description">{description}</Typography>  
+            <Typography className="companyDescription">{description}</Typography>  
         </CardContent>
       </Collapse>
     </Card>
