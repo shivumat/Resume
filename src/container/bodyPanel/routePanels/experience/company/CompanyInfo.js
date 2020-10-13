@@ -69,7 +69,7 @@ export default function CompanyInfo(props) {
             </IconButton>
           }
         title={company}
-        subheader={title + '\t' + startDate + '-' + endDate + '\t' + location}
+        subheader={`${title} | ${startDate} - ${endDate} | ${location}`}
       />
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.descriptionCard}>
