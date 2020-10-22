@@ -6,9 +6,13 @@ import Logo from './logo/Logo';
 
 export default function SideBar(props) {
 
+  const takeToHome = () => {
+    props.handleChange(0);
+  }
+
   return (
     <div className="sideBar">
-      <Link href="/" ><Logo/></Link>
+      <Link onClick={takeToHome}><Logo/></Link>
       <Navigation handleChange={props.handleChange} handleSkillChange={props.handleSkillChange}/>
     </div>
   );
